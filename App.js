@@ -1,18 +1,17 @@
 const express = require("express");
 const app = express();
-const router = require("./route");
-const log = require("./middleware/logger");
-const res = require("express/lib/response");
-const path = require('path');
-
-
-app.use(log);
+const Productrouter = require("./app/products/route");
+const Productrouterv2 = require("./app/product-v2/route");
+// const log = require("./middleware/logger");
+const logger = require("morgan");
+const path = require("path");
+app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(router);
-app.use(express.static(path.join(__dirname, "uploads")));
+app.use(Productrouter);
+app.use(Productrouterv2);
+app.use('/public',express.static(path.join(__dirname, "uploads")));
 app.use((req, res, next) => {
-    
   res.status(404);
   res.send({
     status: "failed",
@@ -20,4 +19,4 @@ app.use((req, res, next) => {
   });
 });
 
-app.listen(3000, () => console.log(`http://localhost:3000`));
+app.listen(3000, () => console.log("Server: http://localhost:3000"));
