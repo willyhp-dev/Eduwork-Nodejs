@@ -19,4 +19,7 @@ app.use((req, res, next) => {
   });
 });
 
-app.listen(3000, () => console.log("Server: http:://localhost:3000"));
+const server = app.listen(process.env.PORT || 5000, () => {
+  const port = server.address().port;
+  console.log(`Express is working on port ${port}`);
+});
