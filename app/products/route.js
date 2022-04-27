@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
     },
     {
       Method: "POST",
-      url:"http://localhost:3000/produts"
+      url:"http://localhost:3000/products"
     },
     {
       Nama: "Willy Handoyo",
