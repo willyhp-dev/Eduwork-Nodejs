@@ -1,32 +1,9 @@
-URL : /,
-Method : GET,
-PARAM : 
-{
-      Nama: "Willy Handoyo",
-      Kelas: "Student",
-      Domisili: "Pontianak",
-      age: 25,
-}
+Express API
 
-URL : /Product,
-Method : POST,
-PARAM :
-{
-    name : "Willyhp",
-    price: 20000,
-    stock: 200,
-    status: "masih ada",
-    image: Amanah.png(muncul gambar)
-}
-ket: harus di input dulu
+URL : "/",
+Method: "GET",
+PARAM: https://prnt.sc/4XG6BB0NC49e
 
-URL :/:category/:tag
-method: GET,
-PARAM :
-{
-  Category: "drink",
-  Tag : "minum"
-  }
-  
-  
-  Revisi ExpressJS
+URL :"/:category",
+Method:"GET",
+PARAM: https://prnt.sc/3C4HHWlKgwKb
