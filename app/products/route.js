@@ -12,18 +12,6 @@ router.get("/", (req, res) => {
   const { page, total } = req.query;
   res.json([
     {
-      Method: "Get",
-      Url: "http://localhost:3000/",
-    },
-    {
-      Method: "GET",
-      url: "http://localhost:3000/:category/:tag",
-    },
-    {
-      Method: "POST",
-      url:"http://localhost:3000/products"
-    },
-    {
       Nama: "Willy Handoyo",
       Kelas: "Student",
       Domisili: "Pontianak",
