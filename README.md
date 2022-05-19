@@ -1,15 +1,50 @@
 Express API
 
-URL : "/",
+URL : "https://express-eduworks.herokuapp.com/api",
 
 Method: "GET",
 
-PARAM: https://prnt.sc/4XG6BB0NC49e
+PARAM:[
+	{
+		"Nama": "Willy Handoyo",
+		"Kelas": "Student",
+		"Domisili": "Pontianak",
+		"age": 25
+	},
+	{
+		"Nama": "Willy Handoyo",
+		"Kelas": "Student",
+		"Domisili": "Pontianak",
+		"age": 25
+	},
+	{
+		"Nama": "Willy Handoyo",
+		"Kelas": "Student",
+		"Domisili": "Pontianak",
+		"age": 25
+	},
+	{
+		"Nama": "Willy Handoyo",
+		"Kelas": "Student",
+		"Domisili": "Pontianak",
+		"age": 25
+	},
+	{
+		"Nama": "Willy Handoyo",
+		"Kelas": "Student",
+		"Domisili": "Pontianak",
+		"age": 25
+	}
+]
 
 =========================================
 
-URL :"/:category",
+URL :"https://express-eduworks.herokuapp.com/api/:category",
 
 Method:"GET",
 
-PARAM: https://prnt.sc/3C4HHWlKgwKb
+PARAM:{
+	"category": {
+		"category": "products"
+	}
+}
